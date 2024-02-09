@@ -1,0 +1,7 @@
+.app-container {
+  border: 1px solid black;
+  margin: 3rem 15rem;
+  height: 80vh;
+  border-radius: 8px;
+  overflow: hidden;
+}

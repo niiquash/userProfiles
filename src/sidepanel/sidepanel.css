@@ -1,0 +1,46 @@
+.sidepanel-container {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid silver;
+  padding: 1.5rem;
+}
+
+.search-section {
+  border: 1px solid black;
+  border-radius: 16px;
+  width: 100%;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-box {
+  border: none;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.user-list-container {
+  margin: 1.5rem auto;
+}
+
+.user-list {
+  list-style: none;
+}
+
+.user-list-item {
+  margin-bottom: 0.5rem;
+  display: block;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.user-list-item:hover {
+  background-color: rgb(190, 221, 235);
+  border-radius: 8px;
+}

@@ -1,8 +1,12 @@
-import { useState } from "react";
 import "./App.css";
+import SidePanel from "./sidepanel/SidePanel";
 
 function App() {
-  return <h1>Welcome to my app.</h1>;
+  return (
+    <div className="app-container">
+      <SidePanel />
+    </div>
+  );
 }
 
 export default App;
