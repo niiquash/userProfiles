@@ -14,14 +14,6 @@ const SidePanel = () => {
     "Anita Okumah-Boyd",
     "Abinadi SonofAbel",
     "Amulek SonofAlma",
-    "Ammon Nii",
-    "Alma Obaka",
-    "Aaron Tetteh",
-    "Abraham Quarshie",
-    "Abel Adamson",
-    "Anita Okumah-Boyd",
-    "Abinadi SonofAbel",
-    "Amulek SonofAlma",
   ]);
 
   const handleChange = (e) => {
