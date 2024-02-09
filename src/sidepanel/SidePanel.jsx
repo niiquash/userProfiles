@@ -14,11 +14,23 @@ const SidePanel = () => {
     "Anita Okumah-Boyd",
     "Abinadi SonofAbel",
     "Amulek SonofAlma",
+    "Ammon Nii",
+    "Alma Obaka",
+    "Aaron Tetteh",
+    "Abraham Quarshie",
+    "Abel Adamson",
+    "Anita Okumah-Boyd",
+    "Abinadi SonofAbel",
+    "Amulek SonofAlma",
   ]);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    setSearchItem(e.target.value);
+  };
 
-  console.log(searchItem);
+  const filteredUsers = users.filter((user) => {
+    return user.toLowerCase().includes(searchItem.toLowerCase());
+  });
 
   return (
     <div className="sidepanel-container">
@@ -28,13 +40,13 @@ const SidePanel = () => {
           placeholder="Search..."
           type="text"
           value={searchItem}
-          onChange={(e) => setSearchItem(e.target.value)}
+          onChange={handleChange}
         />
         <IoMdSearch />
       </div>
       <div className="user-list-container">
         <ul className="user-list">
-          {users.map((user, index) => (
+          {filteredUsers.map((user, index) => (
             <li className="user-list-item" key={index}>
               {user}
             </li>

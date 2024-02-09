@@ -27,10 +27,13 @@
 
 .user-list-container {
   margin: 1.5rem auto;
+  margin-left: 0;
 }
 
 .user-list {
   list-style: none;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .user-list-item {
